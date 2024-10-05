@@ -17,15 +17,25 @@ html {
         background-color: #ffffff;
     }
     
-    .container {
-        margin: auto;
-    }
         
     .flex {
         align-items: center;
         display: flex;
         justify-content: space-between;
+        
     }
+
+    .flex img {
+        max-width:200px;
+        max-height:150px;
+        width: auto;
+        height: auto; 
+    }
+
+    .nav {
+        padding-top: 15px;
+    }
+
         
     header {
         font-family: sans-serif;
@@ -808,14 +818,12 @@ html {
     body {
         background-color: #ffffff;
     }
-    
-    .container {
-        margin: auto;
-    }
 
-    .logo-img {
-        display: flex;
-        
+    .flex img {
+        max-width: 200px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
     }
         
     .flex {
