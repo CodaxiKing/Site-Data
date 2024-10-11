@@ -306,7 +306,7 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 50vh;
+        height: 65vh;
         flex-basis: 100%;
     }
     
@@ -356,10 +356,11 @@ html {
     
     
     .testimonial{
-      margin:200px auto 100px;
+      margin:20px auto 100px;
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
       grid-gap:20px;
+     
     }
     .testimonial .card{
       position:relative;
@@ -625,7 +626,7 @@ html {
     
     .titulo-sec {
         font-family: 'Poppins', sans-serif;
-        font-size: 45px;
+        font-size: 40px;
         color: rgb(0, 0, 0);
         text-align: center;
         letter-spacing: 2px;
