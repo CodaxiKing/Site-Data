@@ -1,5 +1,7 @@
-window.addEventListener("scroll", function(){
-    let header = this.document.querySelector('.header')
-    header.classList.toggle('rolagem', window.scrollY > 0)
+const banner4 = document.querySelector('#banner-4')
+
+const myObserver = new IntersectionObserver((entries) => {
+
 })
 
+myObserver.observe(banner4)

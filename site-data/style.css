@@ -1,27 +1,31 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Archivo Narrow", sans-serif;
     font-size: 18px;
+    text-decoration: none;
 }
 
-html {
-    height: 100vh;
+section {
+    height: 100vh; 
 }
+
 
 @media (max-width: 1600px) {
     body {
         background-color: #ffffff;
     }
     
-        
+
     .flex {
+        
         align-items: center;
         display: flex;
         justify-content: space-between;
+        padding:10px 2%;
     }
 
     .flex img {
@@ -31,32 +35,16 @@ html {
         height: auto;
     }
 
+    .flex ul li{
+        display: inline-block;
+        margin: 0 40px;
+    }
     .nav {
-        padding-top: 15px;
+        text-decoration: none;
     }
 
-        
-    header {
-        font-family: sans-serif;
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        height: 18%;
-        padding:0px 2%;
-        position: fixed;
-        top: -40px;
-        left: 0;
-        transition: .5s;
-        opacity: 100%;
-    }
-    
     .navbar {
-        position: relative;
-        box-sizing: 10px;
-    }
-    
-    .navbar:hover {
-        top:-2px;
-        transition: all .4s ease-in-out
+        text-decoration: none;
     }
     
     .nav-button {
@@ -73,51 +61,22 @@ html {
     }
     
         
-    header.rolagem {
-        background-color: rgba(255, 255, 255, 0);
-        padding:0px 2%;
-        opacity: 100%;
-    }
-        
-    .header.rolagem a{
-        color: #000000;
-    }
-        
-    .header i{
-        font-size: px;
-    }
-        
-    .header ul{
-        list-style: none;
-    }
-        
-    .header ul li{
-        display: inline-block;
-        margin: 0 40px;
-    }
-        
-    .header ul li a{
-        font-size: 20px;
-        color: #000000;
-        text-decoration:none;
-    }
-        
-    .btn-contato button{
+    .btn-contato{
         width: 130px;
         height: 40px;
-        border: 0.2;
-        background-color: #ffffff00;
-        color: #000000;
+        color: #ffffff;
+        background-color: #006eff;
+        border-color: #ffffff;
         border-width: 1px;
-        border-color: #000000;
         cursor: pointer;
-        transition: .2s;
-        font-size: 18px;
+        font-size: 15px;
+        border-radius: 30px;
     }
     
     .btn-contato:hover {
-        top:-2px;
-        box-shadow:0 2px 2px #666;
+        background-color: #ffffff00;
+        color: #006eff;
+        border-color: #006eff;
         transition: all .4s ease-in-out
     }
         
@@ -145,8 +104,7 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
-        margin-top: 100px;
-        height: 70vh;
+        height: 60vh;
         flex-basis: 100%;
     }
     
@@ -161,7 +119,7 @@ html {
     .banner-text {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px; 
-        padding-top: 13%;
+        padding-top: 5%;
         color: #ffffff;
         text-align: center
     }
@@ -171,23 +129,31 @@ html {
         font-size: 20px; 
         color: #ffffff;
         margin-left: -70%;
-        padding: 0%;
         font-weight: bold;
+        margin-top: 1%;
     }
     
     .btn-banner {
         margin-left: -70%;
-        font-size: 25px;
-        margin-top: 4%;
-        color: #ffffff;
-        background-color: #fffafa00;
+        font-size: 20px;
+        color: #001aff;
+        background-color: #ffffff;
         padding: 15px 32px;
         cursor: pointer;
         border-radius: 30px;
+        border-color: #d8d8d8;
+        margin-top: 2%;
+    }
+    
+    .btn-banner:hover {
+        color: #ffffff;
+        background-color: #006eff;
         border-color: #ffffff;
+        transition: 0.5s;
     }
     
     .notebook-maq {
+        
         width: 40%;
         margin-left: 55%;
         margin-top: -1%;
@@ -203,7 +169,7 @@ html {
     }
         
     .banner-3 {
-        height: 120vh;
+        height: 100vh;
         background-color: #cfe6fd;
         background-position: center;
         background-repeat: no-repeat;
@@ -264,10 +230,14 @@ html {
     }
     
     .box {
-        display: inline-block;
-        margin-top: -50%;
+        display: fixed;
+        margin-top: -33%;
         margin-left: 55%;
         margin-right: 10%;
+    }
+
+    .img-erp {
+        margin-top: -2%;
     }
         
     .dev {
@@ -369,8 +339,9 @@ html {
       padding:20px;
       box-sizing:border-box;
       text-align:center;
-      box-shadow:0 10px 40px rgb(255, 255, 255);
+      box-shadow:0 10px 40px rgba(15, 15, 15, 0.24);
       overflow:hidden;
+      border-radius: 8%;
     }
     .testimonial .card .layer{
       position:absolute;
