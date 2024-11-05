@@ -389,442 +389,42 @@ section {
 
 
 /* Tablets */
-@media (max-width: 1024px) {
-    body {
-        background-color: #ffffff;
-    }
-    
-    .container {
-        margin: auto;
-    }
-        
-    .flex {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-        
-    header {
-        font-family: sans-serif;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 18%;
-        padding:0px 2%;
-        position: fixed;
-        top: -40px;
-        left: 0;
-        transition: .5s;
-        opacity: 100%;
-    }
-    
-    .navbar {
-        position: relative;
-        box-sizing: 10px;
-    }
-    
-    .navbar:hover {
-        top:-2px;
-        transition: all .4s ease-in-out
-    }
-    
-    .nav-button {
-        width: 180px;
-        height: 70px;
-        border: 0.2;
-        background-color: #ffffff00;
-        color: #000000;
-        border-width: -10px;
-        border-color: #dfdfdf00;
-        cursor: pointer;
-        transition: .4s;
-        font-size: 12px;
-    }
-    
-        
-    header.rolagem {
-        background-color: rgb(255, 255, 255);
-        padding:0px 2%;
-        opacity: 100%;
-    }
-        
-    .header.rolagem a{
-        color: #000000;
-    }
-        
-    .header i{
-        font-size: px;
-    }
-        
-    .header ul{
-        list-style: none;
-    }
-        
-    .header ul li{
-        display: inline-block;
-        margin: 0 40px;
-    }
-        
-    .header ul li a{
-        font-size: 20px;
-        color: #000000;
-        text-decoration:none;
-    }
-        
-    .btn-contato button{
-        width: 130px;
-        height: 40px;
-        border: 0.2;
-        background-color: #ffffff00;
-        color: #000000;
-        border-width: 1px;
-        border-color: #000000;
-        cursor: pointer;
-        transition: .2s;
-        font-size: 18px;
-    }
-    
-    .btn-contato:hover {
-        top:-2px;
-        box-shadow:0 2px 2px #666;
-        transition: all .4s ease-in-out
-    }
-        
-          
-    @keyframes float {
-        0% {
-          transform:  translateY(0px);
-        }
-        50% {
-            transform: translateY(-30px);
-        }
-        100% {
-            transform:  translateY(0px);
-        }
-    }
-        
-    .div-info {
-        align-items: center;
-        left: auto;
-    }
-        
-    .banner {
-        height: 100vh;
-        background-image: url(imgs/WALLPAPER.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        margin-top: 100px;
-        height: 70vh;
-        flex-basis: 100%;
-    }
-    
-    .banner-text1 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px; 
-        margin-left: -70%;
-        color: #ffffff;
-        font-weight: bold;
-    }
-    
-    .banner-text {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px; 
-        padding-top: 13%;
-        color: #ffffff;
-        text-align: center
-    }
-    
-    .banner-text2 {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px; 
-        color: #ffffff;
-        margin-left: -70%;
-        padding: 0%;
-        font-weight: bold;
-    }
-    
-    .btn-banner {
-        margin-left: -70%;
-        font-size: 25px;
-        margin-top: 4%;
-        color: #ffffff;
-        background-color: #fffafa00;
-        padding: 15px 32px;
-        cursor: pointer;
-        border-radius: 30px;
-        border-color: #ffffff;
-    }
-    
-    .notebook-maq {
-        width: 40%;
-        margin-left: 55%;
-        margin-top: -1%;
-    }
-        
-    .banner-2 {
-        background-color: #fffafa;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 65vh;
-        flex-basis: 170%;
-    }
-        
-    .banner-3 {
-        height: 120vh;
-        background-color: #cfe6fd;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: 0.5%;
-    }
-    
-    .banner-4 {
-        height: 120vh;
-        background-color: #fffafa;
-    }
-        
-    .titulo {
-        font-family: 'Poppins', sans-serif;
-        font-size: 24px;
-        color: rgb(0, 117, 226);
-        text-align: center;
-        letter-spacing: 2px;
-        padding-top: 4%;
-        padding-bottom: 5%;
-    }
-    
-    .titulo-sec {
-        font-family: 'Poppins', sans-serif;
-        font-size: 40px;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        letter-spacing: 2px;
-        padding-top: 4%;
-        padding-bottom: 5%;
-    }
-    
-    .cor {
-        color: #006eff;
-        font-family: 'Poppins', sans-serif;
-        font-size: 45px;
-        text-align: center;
-        letter-spacing: 2px;
-        padding-top: 4%;
-        padding-bottom: 5%;
-    }
-    
-    .planilha {
-        color: #000000;
-        font-family: 'Poppins', sans-serif;
-        font-size: 35px;
-        letter-spacing: 2px;
-        padding-top: 4%;
-        padding-bottom: 5%;
-    }
-    
-    .planilha-text {
-        font-size: 18px;
-    }
-    
-    .img {
-        display: inline-block;
-    }
-    
-    .box {
-        display: inline-block;
-        margin-top: -50%;
-        margin-left: 55%;
-        margin-right: 10%;
-    }
-        
-    .dev {
-        left: 100px;
-        background-color: #fffafa;
-        width: 100%;
-        height: 18%;
-        padding: 10px 1%;
-    }
-        
-        
-    .table {
-        margin-left: 15%;
-    }
-    
-    .rodape-extra {
-        text-align: justify ;
-        padding: 20px;
-    }
-    
-    .tb-r {
-        color: #ffffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px;
-    }
-    
-    .tb-d {
-        color: #ffffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-    }
-    
-    .footer {
-        background-color: #006eff;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        flex-basis: 100%;
-    }
-    
-    .copy {
-        margin-top: -1%;
-    }
-    
-    .copy1 {
-        background-color: #ffffff;
-        text-align: center;
-    }
-        
-    .segmentos {
-        width: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding:0% 5%;   
-    }
-        
-    .segmentos li::marker {
-        color: #ffffff00;
-    }
-    
-    .segmentos2 {
-        width: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding:0% 2%;
-        margin-top: 5%;
-    }
-        
-    .segmentos2 li::marker {
-        color: #ffffff00;
-    }
-        
-    .lojas {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        color: rgb(00, 117, 226);
-        text-align: center;
-        letter-spacing: 2px;
-        padding-top: 5%;
-        padding-bottom: 3%;
-    }
-    
-    
-    .testimonial{
-      margin:200px auto 100px;
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
-      grid-gap:20px;
-    }
-    .testimonial .card{
-      position:relative;
-      margin:0 auto;
-      width:350px;
-      background:#ffffff;
-      padding:20px;
-      box-sizing:border-box;
-      text-align:center;
-      box-shadow:0 10px 40px rgb(255, 255, 255);
-      overflow:hidden;
-    }
-    .testimonial .card .layer{
-      position:absolute;
-      top:calc(100% - 2px);
-      left:0;
-      height:100%;
-      width:100%;
-      background:linear-gradient(#ffffff, #ffffff);
-      z-index:1;
-      transition:0.5s;
-    }
-    .testimonial .card:hover .layer{
-      top:0;
-    }
-    .testimonial .card .content{
-      position:relative;
-      z-index:2;
-    }
-    .testimonial .card .content p{
-      font-size:18px;
-      line-height:24px;
-    }
-    .testimonial .card .content .image{
-      width:128px;
-      height:128px;
-      margin:0 auto;
-      border-radius:50%;
-      overflow:hidden;
-      border:4px solid #fff;
-      box-shadow:0 10px 20px
-        rgba(0,0,0,.2);
-    }
-    .testimonial .card .content .details h2{
-      font-size:18px;
-    }
-    .testimonial .card .content .details span{
-      color:#03a9f4;
-      font-size:14px;
-      transition:0.5s;
-    }
-    .testimonial .card:hover .content .details span{
-      color:#fff;
-    }
+@media (max-width: 1080px) {
+
 }
 
-
-/* Celulares */ 
-@media (max-width: 450px) {
+/* Celular */
+@media (max-width: 768px) {
     body {
         background-color: #ffffff;
+    }
+    
+
+    .flex {
+        
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding:10px 2%;
     }
 
     .flex img {
-        max-width: 200px;
-        max-height: 150px;
+        max-width:200px;
+        max-height:150px;
         width: auto;
         height: auto;
     }
-        
-    .flex {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        
+
+    .flex ul li{
+        display: inline-block;
+        margin: 0 5px;
     }
-        
-    header {
-        font-family: sans-serif;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 18%;
-        padding:0px 2%;
-        position: fixed;
-        top: -40px;
-        left: 0;
-        transition: .5s;
-        opacity: 100%;
+    .nav {
+        text-decoration: none;
     }
-    
+
     .navbar {
-        position: relative;
-        box-sizing: 10px;
-    }
-    
-    .navbar:hover {
-        top:-2px;
-        transition: all .4s ease-in-out
+        text-decoration: none;
     }
     
     .nav-button {
@@ -841,51 +441,22 @@ section {
     }
     
         
-    header.rolagem {
-        background-color: rgb(255, 255, 255);
-        padding:0px 2%;
-        opacity: 100%;
-    }
-        
-    .header.rolagem a{
-        color: #000000;
-    }
-        
-    .header i{
-        font-size: px;
-    }
-        
-    .header ul{
-        list-style: none;
-    }
-        
-    .header ul li{
-        display: inline-block;
-        margin: 0 40px;
-    }
-        
-    .header ul li a{
-        font-size: 20px;
-        color: #000000;
-        text-decoration:none;
-    }
-        
-    .btn-contato button{
+    .btn-contato{
         width: 130px;
         height: 40px;
-        border: 0.2;
-        background-color: #ffffff00;
-        color: #000000;
+        color: #ffffff;
+        background-color: #006eff;
+        border-color: #ffffff;
         border-width: 1px;
-        border-color: #000000;
         cursor: pointer;
-        transition: .2s;
-        font-size: 18px;
+        font-size: 15px;
+        border-radius: 30px;
     }
     
     .btn-contato:hover {
-        top:-2px;
-        box-shadow:0 2px 2px #666;
+        background-color: #ffffff00;
+        color: #006eff;
+        border-color: #006eff;
         transition: all .4s ease-in-out
     }
         
@@ -913,14 +484,13 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
-        margin-top: 100px;
-        height: 70vh;
+        height: 60vh;
         flex-basis: 100%;
     }
     
     .banner-text1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px; 
+        font-size: 20px; 
         margin-left: -70%;
         color: #ffffff;
         font-weight: bold;
@@ -929,33 +499,41 @@ section {
     .banner-text {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px; 
-        padding-top: 13%;
+        padding-top: 15%;
         color: #ffffff;
         text-align: center
     }
     
     .banner-text2 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px; 
+        font-size: 12px; 
         color: #ffffff;
         margin-left: -70%;
-        padding: 0%;
         font-weight: bold;
+        margin-top: 1%;
     }
     
     .btn-banner {
         margin-left: -70%;
-        font-size: 25px;
-        margin-top: 4%;
-        color: #ffffff;
-        background-color: #fffafa00;
-        padding: 15px 32px;
+        font-size: 15px;
+        color: #001aff;
+        background-color: #ffffff;
+        padding: 10px 12px;
         cursor: pointer;
         border-radius: 30px;
+        border-color: #d8d8d8;
+        margin-top: 2%;
+    }
+    
+    .btn-banner:hover {
+        color: #ffffff;
+        background-color: #006eff;
         border-color: #ffffff;
+        transition: 0.5s;
     }
     
     .notebook-maq {
+        
         width: 40%;
         margin-left: 55%;
         margin-top: -1%;
@@ -969,9 +547,18 @@ section {
         height: 65vh;
         flex-basis: 170%;
     }
+
+    .banner-2 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-2 .lojas {
+        font-size: 15px;
+    }
         
     .banner-3 {
-        height: 120vh;
+        height: 100vh;
         background-color: #cfe6fd;
         background-position: center;
         background-repeat: no-repeat;
@@ -1032,10 +619,14 @@ section {
     }
     
     .box {
-        display: inline-block;
-        margin-top: -50%;
+        display: fixed;
+        margin-top: -33%;
         margin-left: 55%;
         margin-right: 10%;
+    }
+
+    .img-erp {
+        margin-top: -2%;
     }
         
     .dev {
@@ -1073,7 +664,7 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 50vh;
+        height: 65vh;
         flex-basis: 100%;
     }
     
@@ -1123,10 +714,11 @@ section {
     
     
     .testimonial{
-      margin:200px auto 100px;
+      margin:20px auto 100px;
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
       grid-gap:20px;
+     
     }
     .testimonial .card{
       position:relative;
@@ -1136,8 +728,9 @@ section {
       padding:20px;
       box-sizing:border-box;
       text-align:center;
-      box-shadow:0 10px 40px rgb(255, 255, 255);
+      box-shadow:0 10px 40px rgba(15, 15, 15, 0.24);
       overflow:hidden;
+      border-radius: 8%;
     }
     .testimonial .card .layer{
       position:absolute;
@@ -1180,5 +773,5 @@ section {
     }
     .testimonial .card:hover .content .details span{
       color:#fff;
-    }
+    }   
 }
