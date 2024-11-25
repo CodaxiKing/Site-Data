@@ -250,24 +250,34 @@ section {
         
         
     .table {
-        margin-left: 15%;
+        margin-left: 0%;
     }
+
+    .table img {
+        margin-left: -30%;
+        width: 150px;
+        height: 150px;
+        padding: -50%;
+    }
+
+   
     
     .rodape-extra {
         text-align: justify ;
-        padding: 20px;
+        padding: 50%;
     }
     
-    .tb-r {
+    .rodape-extra .tb-r {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px;
+        font-size: 20px;
     }
     
     .tb-d {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
+        font-size: 10px;
+        margin-left: -50%;
     }
     
     .footer {
@@ -542,14 +552,15 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 65vh;
-        flex-basis: 170%;
+        height: 35vh;
+   
     }
 
     .banner-2 img {
         width: 50px;
         height: 50px;
         justify-content: center;
+
 
     }
 
@@ -569,20 +580,24 @@ section {
     }
     
     .banner-4 {
-        height: 120vh;
+        height: 160vh;
         background-color: #fffafa;
 
     }
 
     .img-erp {
-        max-width:150px;
-        max-height:120px;
-        align-items: center;
+        max-width:250px;
+        max-height:210px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
     }
         
     .titulo {
         font-family: 'Poppins', sans-serif;
-        font-size: 10px;
+        font-size: 15px;
         color: rgb(0, 117, 226);
         text-align: center;
         letter-spacing: 2px;
@@ -613,14 +628,16 @@ section {
     .planilha {
         color: #000000;
         font-family: 'Poppins', sans-serif;
-        font-size: 10px;
+        text-align: center;
+        font-size: 20px;
         letter-spacing: 2px;
         padding-top: 4%;
         padding-bottom: 5%;
     }
     
     .planilha-text {
-        font-size: 5px;
+        font-size: 20px;
+        text-align: center
     }
     
     .img {
@@ -629,13 +646,14 @@ section {
     
     .box {
         display: fixed;
-        margin-top: -33%;
-        margin-left: 55%;
+        margin-top: 3%;
+        margin-left: 5%;
         margin-right: 10%;
     }
 
     .img-erp {
-        margin-top: -2%;
+        width: 200px;
+        height: 200px;
     }
         
     .dev {
@@ -648,24 +666,42 @@ section {
         
         
     .table {
-        margin-left: 15%;
+        margin: auto;
     }
     
     .rodape-extra {
-        text-align: justify ;
-        padding: 20px;
+        text-align: justify;
+        padding: 0;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin-left: 50%;
     }
+
+    .rodape-extra1 {
+        text-align: justify;
+        padding: 0;
+        color: #ffffff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+
+    }
+
     
     .tb-r {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 40px;
+        margin-left: -50%;
+
     }
     
     .tb-d {
         color: #ffffff;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
+        margin-left: -50%;
+
     }
     
     .footer {
@@ -673,9 +709,11 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 65vh;
+        height: 25vh;
         flex-basis: 100%;
     }
+
+    
     
     .copy {
         margin-top: -1%;
@@ -713,7 +751,7 @@ section {
         
     .lojas {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 10px;
         color: rgb(00, 117, 226);
         text-align: center;
         letter-spacing: 2px;
@@ -732,7 +770,7 @@ section {
     .testimonial .card{
       position:relative;
       margin:0 auto;
-      width:350px;
+      width:300px;
       background:#ffffff;
       padding:20px;
       box-sizing:border-box;
@@ -745,8 +783,8 @@ section {
       position:absolute;
       top:calc(100% - 2px);
       left:0;
-      height:100%;
-      width:100%;
+      height:80%;
+      width:80%;
       background:linear-gradient(#ffffff, #ffffff);
       z-index:1;
       transition:0.5s;
