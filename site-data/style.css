@@ -587,12 +587,14 @@ section {
 
     .img-erp {
         max-width:250px;
-        max-height:210px;
+        max-height:200px;
         top: 0;
         right: 0;
+        display: flex;
+        margin-left: 15%;
         bottom: 0;
         left: 0;
-        margin: auto;
+        
     }
         
     .titulo {
@@ -652,8 +654,8 @@ section {
     }
 
     .img-erp {
-        width: 200px;
-        height: 200px;
+        width: 800px;
+        height: 500px;
     }
         
     .dev {
