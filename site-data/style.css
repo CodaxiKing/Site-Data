@@ -17,6 +17,7 @@ section {
 @media (max-width: 1600px) {
     body {
         background-color: #ffffff;
+        
     }
     
 
@@ -30,23 +31,54 @@ section {
 
     .flex img {
         max-width:200px;
-        max-height:150px;
-        width: auto;
-        height: auto;
+        padding-top: vh;
     }
 
     .flex ul li{
         display: inline-block;
         margin: 0 40px;
     }
-    .nav {
+
+    a {
+        color: #000000;
         text-decoration: none;
+        transition: 0.3s;
     }
 
-    .navbar {
-        text-decoration: none;
+    a:hover {
+        opacity: 0.7;
     }
+
     
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        display: none;
+    }
+
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: #000000;
+        margin:  8px;
+    }
+
+    main {
+        background: url("") no-repeat center center;
+        background-size: cover;
+
+    }
+
     .nav-button {
         width: 180px;
         height: 70px;
@@ -280,14 +312,7 @@ section {
         margin-left: -50%;
     }
     
-    .footer {
-        background-color: #006eff;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 65vh;
-        flex-basis: 100%;
-    }
+    
     
     .copy {
         margin-top: -1%;
@@ -394,13 +419,52 @@ section {
     }
     .testimonial .card:hover .content .details span{
       color:#fff;
-    }   
+    }
+    footer {
+        background-color: #006eff;
+        color: #006eff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+    
+    .footer-1 {
+        list-style-type: none;
+    }
 }
 
 
 /* Tablets */
 @media (max-width: 1080px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
 
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
 }
 
 /* Celular */
@@ -434,9 +498,7 @@ section {
         text-decoration: none;
     }
 
-    .nav ul {
-        font-size: 5px;
-    }
+    
 
     .navbar {
         text-decoration: none;
